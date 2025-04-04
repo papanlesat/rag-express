@@ -1,3 +1,10 @@
+install ollama > pull model 
+register tavily copy api key
+```sh```
+cp .env.example .env
+``````
+isi .env tavily apikey
+
 testing 
 ```bash```
 curl -X POST http://localhost:3000/api/ai/search \
