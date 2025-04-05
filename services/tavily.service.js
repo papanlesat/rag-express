@@ -1,5 +1,5 @@
 const { TavilySearchResults } = require("@langchain/community/tools/tavily_search");
-const { Ollama } = require("@langchain/community/llms/ollama");
+const aiService = require('../services/ai.service');
 const { PromptTemplate } = require("@langchain/core/prompts");
 
 class TavilyService {
@@ -12,10 +12,7 @@ class TavilyService {
             maxResults: 5
         });
 
-        this.llm = new Ollama({
-            baseUrl: process.env.OLLAMA_HOST || "http://localhost:11434",
-            model: process.env.OLLAMA_MODEL || "llama2",
-        });
+        this.llm = aiService.initializeLLM();
 
         this.searchPrompt = new PromptTemplate({
             template: `Analyze these search results and provide a concise answer:

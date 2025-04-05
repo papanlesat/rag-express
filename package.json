@@ -9,6 +9,7 @@
   "dependencies": {
     "@langchain/community": "^0.3.39",
     "@langchain/core": "^0.3.43",
+    "@langchain/openai": "^0.5.4",
     "@tavily/core": "^0.3.5",
     "body-parser": "^2.2.0",
     "cookie-parser": "~1.4.4",
