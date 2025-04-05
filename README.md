@@ -19,8 +19,8 @@ Ikuti langkah-langkah berikut untuk menginstal dan menjalankan proyek:
 
 1. **Clone repository**
    ```bash
-   git clone https://github.com/yourusername/nama-proyek.git
-   cd nama-proyek
+   git clone https://github.com/papanlesat/rag-express.git
+   cd rag-express
    ```
 
 2. **Instal dependensi**
@@ -79,7 +79,7 @@ Ikuti langkah-langkah berikut untuk menginstal dan menjalankan proyek:
 - **Body**:
   ```json
   {
-    "question": "What is the latest version of Node.js?"
+    "question": "Berikan rekomondasi gado gado enak di jalan monginsidi Sidoarjo"
   }
   ```
 
